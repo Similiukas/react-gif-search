@@ -1,38 +1,43 @@
-.App {
+/* 
+  Since using very simple css, decided to not use SCSS for simplicity
+*/
+
+body {
   text-align: center;
+  background-color: cadetblue;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Search bar. Centering and setting size */
+.search-input{
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Main grid of gifs */
+.main-gif-grid {
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Popup gif (just the gif) */
+.popup-gif {
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: unset;
+}
+/* Div inside popup which closes the popup */
+.popup-close-div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 33.3vw;
+  background-color: #61dafb;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Button inside closing div of popup */
+.btn-close {
+  display: inline-block;
+  cursor: pointer;
 }
